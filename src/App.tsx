@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import QUESTIONS from './questions.json';
 
-export default function App() {
-	const questions = {QUESTIONS};
+export function RenderQuestion(): JSX.Element {
+	return <div>{QUESTIONS[0].answerOptions}</div>
+}
+
+export default function App(): JSX.Element {
+
+	const questions = RenderQuestion();
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 
