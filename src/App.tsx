@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
-import QUESTIONS from './questions.json';
+import questions from './questions.json';
 
 export function RenderQuestion(): JSX.Element {
-	return <div>{QUESTIONS[0].answerOptions}</div>
+	return <div>{questions[0].answerOptions}</div>
 }
 
 export default function App(): JSX.Element {
 
-	const questions = RenderQuestion();
+	const [currentQuestion, setCurrentQuestion] = useState<number>(0);
 
-	const [currentQuestion, setCurrentQuestion] = useState(0);
-
-	const handleAnswerClick = (isCorrect) => {
+	const handleAnswerClick = (isCorrect: boolean) => {
 		if (isCorrect) {
 			alert("Correct!")
 			setScore(score+1);
@@ -26,11 +24,11 @@ export default function App(): JSX.Element {
 		}
 	}
 
-	const [showScore, setShowScore] = useState(false);
+	const [showScore, setShowScore] = useState<boolean>(false);
 
-	const [score, setScore] = useState(0);
+	const [score, setScore] = useState<number>(0);
 
-	const isScorePerfect = (score) => {
+	const isScorePerfect = (score: number) => {
 		if (score === questions.length) {
 			return true;
 		} else {
@@ -38,8 +36,25 @@ export default function App(): JSX.Element {
 		}
 	}
 
+	const [atMainMenu, setAtMainMenu] = useState<boolean>(true)
+
+	const [questionsVisible, setQuestionsVisible] = useState<boolean>(false)
+
+	const handleStartClick = () => {
+		setAtMainMenu(false)
+		setQuestionsVisible(true)
+	}
+
 	return (
 		<div className='app'>
+			{atMainMenu ? (
+				<div className= 'main-menu'>
+					Welcome to the main menu.
+					<button onClick={() => handleStartClick()}>{"Start"}</button>
+				</div>
+			) : (
+				<div>You clicked start! That's pretty cool, man. Sadly it doesn't really do anything yet.</div>
+			)}
 			{showScore ? (
 				<div 
 				className='score-section'>You scored {score} out of {questions.length}
@@ -47,9 +62,7 @@ export default function App(): JSX.Element {
 					<div className='congratulations'>A perfect score! Great job!</div>
 				) : (
 					<div className='good-try'>Thanks for playing!</div>
-				)
-				
-			}
+				)}
 				</div>
 			) : (
 				<>
