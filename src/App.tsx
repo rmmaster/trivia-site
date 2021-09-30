@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import questions from './questions.json';
+import questions from './assets/questions.json';
 
 export function RenderQuestion(): JSX.Element {
 	return <div>{questions[0].answerOptions}</div>
@@ -38,23 +38,19 @@ export default function App(): JSX.Element {
 
 	const [atMainMenu, setAtMainMenu] = useState<boolean>(true)
 
-	const [questionsVisible, setQuestionsVisible] = useState<boolean>(false)
-
 	const handleStartClick = () => {
 		setAtMainMenu(false)
-		setQuestionsVisible(true)
 	}
 
 	return (
 		<div className='app'>
-			{atMainMenu ? (
+			{atMainMenu ?
 				<div className= 'main-menu'>
 					Welcome to the main menu.
 					<button onClick={() => handleStartClick()}>{"Start"}</button>
 				</div>
-			) : (
-				<div>You clicked start! That's pretty cool, man. Sadly it doesn't really do anything yet.</div>
-			)}
+				:null 
+			}
 			{showScore ? (
 				<div 
 				className='score-section'>You scored {score} out of {questions.length}
@@ -66,17 +62,21 @@ export default function App(): JSX.Element {
 				</div>
 			) : (
 				<>
+				{!atMainMenu ?
+					<>
 					<div className='question-section'>
-						<div className='question-count'>
-							<span>Question {currentQuestion+1}</span>/{questions.length}
-						</div>
-						<div className='question-text'>{questions[currentQuestion].questionText}</div>
-					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption, index) => (
-							<button onClick={() => handleAnswerClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-						))}
-					</div>
+								<div className='question-count'>
+									<span>Question {currentQuestion + 1}</span>/{questions.length}
+								</div>
+								<div className='question-text'>{questions[currentQuestion].questionText}</div>
+							</div><div className='answer-section'>
+									{questions[currentQuestion].answerOptions.map((answerOption, index) => (
+										<button onClick={() => handleAnswerClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+									))}
+							</div>
+						</>
+					:null
+					}
 				</>
 			)}
 		</div>
