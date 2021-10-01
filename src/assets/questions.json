@@ -93,12 +93,14 @@
         "reason": "Black Knight is not in the group, if you counted him."
     },          
     {
-        "questionText": "What the fuck is a Mario",
+        "questionText": "Which of these elements was not present in Borderlands 2?",
         "answerOptions": [
-            { "answerText": "Yes", "isCorrect": true },
-            { "answerText": "Yes", "isCorrect": true }            
+            { "answerText": "Corrosion", "isCorrect": false },
+            { "answerText": "Cryo", "isCorrect": true },
+            { "answerText": "Slag", "isCorrect": false },
+            { "answerText": "Explosive", "isCorrect": false }
         ],
-        "gameSource": "Mario",
-        "reason": "Yes."
+        "gameSource": "Borderlands",
+        "reason": "Cryo was introduced in the next game, The Pre-Sequel."
     }
 ]
