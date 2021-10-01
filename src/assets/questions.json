@@ -1,38 +1,47 @@
 [
     {
-        "questionText": "What is the capital of France?",
+        "questionText": "What is NOT rewarded for completing the Path of Pain?",
         "answerOptions": [
-            { "answerText": "New York", "isCorrect": false },
-            { "answerText": "London", "isCorrect": false },
-            { "answerText": "Paris", "isCorrect": true },
-            { "answerText": "Dublin", "isCorrect": false }
-        ]
+            { "answerText": "Special dialogue", "isCorrect": true },
+            { "answerText": "A special cutscene", "isCorrect": false },
+            { "answerText": "A Hunter's Journal entry", "isCorrect": false }
+        ],
+        "gameSource": "Hollow Knight"
     },
     {
-        "questionText": "Who founded Microsoft?",
+        "questionText": "Before official release, Scout's Stock Primary Weapon was planned to be a Nail Gun.",
         "answerOptions": [
-            { "answerText": "Jeff Bezos", "isCorrect": false },
-            { "answerText": "Elon Musk", "isCorrect": false },
-            { "answerText": "Bill Gates", "isCorrect": true },
-            { "answerText": "Tony Stark", "isCorrect": false }
-        ]
+            { "answerText": "True", "isCorrect": true },
+            { "answerText": "False", "isCorrect": false }
+        ],
+        "gameSource": "Team Fortress 2"
     },
     {
-        "questionText": "The iPhone was created by which company?",
+        "questionText": "By the National Pokédex, what Pokémon is #001?",
         "answerOptions": [
-            { "answerText": "Apple", "isCorrect": true },
-            { "answerText": "Intel", "isCorrect": false },
-            { "answerText": "Amazon", "isCorrect": false },
-            { "answerText": "Microsoft", "isCorrect": false }
-        ]
+            { "answerText": "Pikachu", "isCorrect": false },
+            { "answerText": "Bulbasaur", "isCorrect": true },
+            { "answerText": "Squirtle", "isCorrect": false },
+            { "answerText": "Charmander", "isCorrect": false }
+        ],
+        "gameSource": "Pokémon"
     },
     {
-        "questionText": "How many Harry Potter books are there?",
+        "questionText": "What boss does Bowler joke about removing from a Rainbow Run?",
         "answerOptions": [
-            { "answerText": "1", "isCorrect": false },
-            { "answerText": "4", "isCorrect": false },
-            { "answerText": "6", "isCorrect": false },
-            { "answerText": "7", "isCorrect": true }
-        ]
+            { "answerText": "Gatling Gull", "isCorrect": false },
+            { "answerText": "High Priest", "isCorrect": false },
+            { "answerText": "Wallmonger", "isCorrect": false },
+            { "answerText": "Ammoconda", "isCorrect": true }
+        ],
+        "gameSource": "Enter the Gungeon"
+    },
+    {
+        "questionText": "What the fuck is a Mario",
+        "answerOptions": [
+            { "answerText": "Yes", "isCorrect": true },
+            { "answerText": "Yes", "isCorrect": true }            
+        ],
+        "gameSource": "Mario"
     }
 ]

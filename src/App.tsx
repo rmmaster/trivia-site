@@ -46,8 +46,9 @@ export default function App(): JSX.Element {
 		<div className='app'>
 			{atMainMenu ?
 				<div className= 'main-menu'>
-					Welcome to the main menu.
-					<button onClick={() => handleStartClick()}>{"Start"}</button>
+					<h1 className = 'title-text'>Riyara's Video Game Trivia</h1>
+					<h2 className = 'subtitle-text'>CISC275 F2021</h2>
+					<button className = 'start-button' onClick={() => handleStartClick()}>{<strong>Start</strong>}</button>
 				</div>
 				:null 
 			}
@@ -67,6 +68,7 @@ export default function App(): JSX.Element {
 					<div className='question-section'>
 								<div className='question-count'>
 									<span>Question {currentQuestion + 1}</span>/{questions.length}
+									<h3>Game: {questions[currentQuestion].gameSource}</h3>
 								</div>
 								<div className='question-text'>{questions[currentQuestion].questionText}</div>
 							</div><div className='answer-section'>
