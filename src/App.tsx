@@ -11,10 +11,10 @@ export default function App(): JSX.Element {
 
 	const handleAnswerClick = (isCorrect: boolean) => {
 		if (isCorrect) {
-			alert("Correct!")
+			alert("Correct! " + questions[currentQuestion].reason)
 			setScore(score+1);
 		} else {
-			alert("Incorrect!")
+			alert("Incorrect! " + questions[currentQuestion].reason)
 		}
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {

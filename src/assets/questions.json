@@ -6,7 +6,8 @@
             { "answerText": "A special cutscene", "isCorrect": false },
             { "answerText": "A Hunter's Journal entry", "isCorrect": false }
         ],
-        "gameSource": "Hollow Knight"
+        "gameSource": "Hollow Knight",
+        "reason": "You get a small cutscene between the Pure Vessel and the Pale King, and the Seal of Binding entry."
     },
     {
         "questionText": "Before official release, Scout's Stock Primary Weapon was planned to be a Nail Gun.",
@@ -14,7 +15,8 @@
             { "answerText": "True", "isCorrect": true },
             { "answerText": "False", "isCorrect": false }
         ],
-        "gameSource": "Team Fortress 2"
+        "gameSource": "Team Fortress 2",
+        "reason": "You can see this in the early trailer for the Orange Box!"
     },
     {
         "questionText": "By the National Pokédex, what Pokémon is #001?",
@@ -24,7 +26,8 @@
             { "answerText": "Squirtle", "isCorrect": false },
             { "answerText": "Charmander", "isCorrect": false }
         ],
-        "gameSource": "Pokémon"
+        "gameSource": "Pokémon",
+        "reason": "Bulbasaur is Pokémon #1."
     },
     {
         "questionText": "What boss does Bowler joke about removing from a Rainbow Run?",
@@ -34,14 +37,68 @@
             { "answerText": "Wallmonger", "isCorrect": false },
             { "answerText": "Ammoconda", "isCorrect": true }
         ],
-        "gameSource": "Enter the Gungeon"
+        "gameSource": "Enter the Gungeon",
+        "reason": "It is a joke from the developers because of how much players hate Ammoconda."
     },
+    {
+        "questionText": "Master Mode changes boss patterns.",
+        "answerOptions": [
+            { "answerText": "True", "isCorrect": false },
+            { "answerText": "False", "isCorrect": true }
+        ],
+        "gameSource": "Terraria",
+        "reason": "Only Expert Mode does this!"
+    },
+    {
+        "questionText": "Who is the first character to speak?",
+        "answerOptions": [
+            { "answerText": "Vi", "isCorrect": false },
+            { "answerText": "Maki", "isCorrect": false },
+            { "answerText": "Kabbu", "isCorrect": true },
+            { "answerText": "Eetl", "isCorrect": false }
+        ],
+        "gameSource": "Bug Fables",
+        "reason": "The order goes Kabbu->Maki->Vi->Eetl, if you were curious."
+    },
+    {
+        "questionText": "Based on your choices, how many different bosses can end up being the final boss?",
+        "answerOptions": [
+            { "answerText": "2", "isCorrect": false },
+            { "answerText": "3", "isCorrect": true },
+            { "answerText": "4", "isCorrect": false }
+        ],
+        "gameSource": "Bloodborne",
+        "reason": "It can be, Mergo's Wet Nurse, Gehrman, or Moon Presence. They each give a unique ending!"
+    },      
+    {
+        "questionText": "As of Repentance, how many bosses can give an ending?",
+        "answerOptions": [
+            { "answerText": "9", "isCorrect": false },
+            { "answerText": "10", "isCorrect": false },
+            { "answerText": "12", "isCorrect": true },
+            { "answerText": "13", "isCorrect": true }
+        ],
+        "gameSource": "The Binding of Isaac",
+        "reason": "Both 12 and 13 are accepted, as some may consider Ultra Greed and Ultra Greedier as the same boss for an ending."
+    },        
+    {
+        "questionText": "How many Knights are in the Order of No Quarter?",
+        "answerOptions": [
+            { "answerText": "6", "isCorrect": false },
+            { "answerText": "7", "isCorrect": false },
+            { "answerText": "8", "isCorrect": true },
+            { "answerText": "9", "isCorrect": false }
+        ],
+        "gameSource": "Shovel Knight",
+        "reason": "Black Knight is not in the group, if you counted him."
+    },          
     {
         "questionText": "What the fuck is a Mario",
         "answerOptions": [
             { "answerText": "Yes", "isCorrect": true },
             { "answerText": "Yes", "isCorrect": true }            
         ],
-        "gameSource": "Mario"
+        "gameSource": "Mario",
+        "reason": "Yes."
     }
 ]
